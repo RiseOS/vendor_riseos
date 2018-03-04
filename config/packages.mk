@@ -28,3 +28,7 @@ PRODUCT_PACKAGES += \
     libexfat \
     mkfs.exfat \
     mount.exfat
+
+# Updater
+PRODUCT_PACKAGES += \
+    Updater
