@@ -17,13 +17,13 @@ PRODUCT_PACKAGE_OVERLAYS += \
     $(VENDOR_RISEOS_PATH)/overlay/common
 
 # bootanimation (720p)
-ifeq ($(filter-out kugo tulip, $(TARGET_DEVICE)),)
+ifneq ($(filter lilac kugo tulip, $(TARGET_DEVICE)),)
 PRODUCT_COPY_FILES +=  \
     $(VENDOR_RISEOS_PATH)/prebuilt//bootanimation/720p/bootanimation.zip:system/media/bootanimation.zip
 endif
 
 # bootanimation (1080p)
-ifeq ($(filter-out suzu, $(VENDOR_RISEOS_PATH)),)
+ifneq ($(filter maple poplar pioneer discovery apollo akari suzu, $(TARGET_DEVICE)),)
 PRODUCT_COPY_FILES +=  \
     $(VENDOR_RISEOS_PATH)/prebuilt/bootanimation/1080p/bootanimation.zip:system/media/bootanimation.zip
 endif
