@@ -15,4 +15,8 @@
 # vendor path
 VENDOR_RISEOS := vendor/riseos
 
+# Include overlays
+PRODUCT_PACKAGE_OVERLAYS += \
+    $(VENDOR_RISEOS)/overlay/common
+
 $(call inherit-product-if-exists, $(VENDOR_RISEOS)/*/*.mk)
