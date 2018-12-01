@@ -15,6 +15,13 @@
 # OS version
 ROM_VERSION := 9.0.0
 
+# Build ID format: a.b.c_rN
+# a - major number
+# b - minor number
+# c - build number
+# rN - revision number
+BUILD_ID := 1.0.0_r16
+
 # ROM properties
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.ros.version=$(ROM_VERSION)
