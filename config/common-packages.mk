@@ -16,3 +16,8 @@
 PRODUCT_PACKAGES += \
     fsck.exfat \
     mkfs.exfat
+
+# Media apps
+PRODUCT_PACKAGES += \
+    SnapdragonGallery \
+    SnapdragonMusic
