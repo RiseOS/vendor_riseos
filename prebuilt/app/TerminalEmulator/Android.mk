@@ -12,16 +12,13 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# exFat
-PRODUCT_PACKAGES += \
-    fsck.exfat \
-    mkfs.exfat
+LOCAL_PATH := $(call my-dir)
 
-# Media apps
-PRODUCT_PACKAGES += \
-    SnapdragonGallery \
-    SnapdragonMusic
-
-# Prebuilt apps
-PRODUCT_PACKAGES += \
-    TerminalEmulator
+include $(CLEAR_VARS)
+LOCAL_MODULE := TerminalEmulator
+LOCAL_SRC_FILES := TerminalEmulator.apk
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := APPS
+LOCAL_CERTIFICATE := PRESIGNED
+LOCAL_DEX_PREOPT := false
+include $(BUILD_PREBUILT)
