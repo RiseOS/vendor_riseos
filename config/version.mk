@@ -23,7 +23,7 @@ ROM_VERSION := 9.0.0
 # b - minor number
 # c - build number
 # rN - revision number
-BUILD_ID := 1.0.0_r16
+BUILD_ID := 1.0.0_r21
 
 # ROM properties
 PRODUCT_PROPERTY_OVERRIDES += \
