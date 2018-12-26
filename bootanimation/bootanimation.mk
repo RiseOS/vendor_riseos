@@ -12,21 +12,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# bootanimation
-PRODUCT_PACKAGES += \
-    bootanimation.zip
-
-# exFat
-PRODUCT_PACKAGES += \
-    fsck.exfat \
-    mkfs.exfat
-
-# Media apps
-PRODUCT_PACKAGES += \
-    SnapdragonGallery \
-    SnapdragonMusic
-
-# Prebuilt apps
-PRODUCT_PACKAGES += \
-    Chromium \
-    TerminalEmulator
+# 1080p devices
+ifneq ($(filter ros_f512% ros_g814% poplar pioneer discovery voyager, $(TARGET_PRODUCT)),)
+PRODUCT_COPY_FILES +=  \
+    $(VENDOR_RISEOS)/bootanimation/1080p/bootanimation.zip:system/media/bootanimation.zip
+endif
