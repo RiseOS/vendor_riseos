@@ -25,7 +25,7 @@ ROM_VERSION := 9.0.0
 # for minor variations added to an existing build to re-use the same date code as the existing build.
 # bbb - identifies individual versions related to the same date code, sequentially starting with 001.
 # rN - is an optional, alphanumeric that identifies the currently used source code tag.
-BUILD_ID := P.181227.001.r21
+BUILD_ID := P.190101.001.r21
 
 # ROM properties
 PRODUCT_PROPERTY_OVERRIDES += \
