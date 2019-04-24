@@ -28,5 +28,4 @@ PRODUCT_PACKAGES += \
 
 # Prebuilt apps
 PRODUCT_PACKAGES += \
-    Chromium \
     TerminalEmulator
